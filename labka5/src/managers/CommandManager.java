@@ -21,7 +21,7 @@ public class CommandManager {
         commands.put("insert", new Insert(collectionManager, xmlManager, organizationBuilder));
         commands.put("update", new Update(collectionManager, organizationBuilder));
         commands.put("remove_key", new RemoveKey(collectionManager));
-        commands.put("save", new Save(collectionManager, xmlManager, "organizations.xml"));
+        commands.put("save", new Save(collectionManager, xmlManager, collectionManager.getFilePath()));
         commands.put("remove_all_by_type", new RemoveAllByType(collectionManager));
         commands.put("count_less_than_annual_turnover", new CountLessThanAnnualTurnover(collectionManager));
         commands.put("filter_by_annual_turnover", new FilterByAnnualTurnover(collectionManager));
