@@ -27,6 +27,11 @@ public class CollectionManager
         System.out.println("Коллекция загружена из файла " + fileName);
     }
 
+    public String getFilePath()
+    {
+        return filePath;
+    }
+
     public boolean containsId(long id)
     {
         return organizations.containsKey(id);
